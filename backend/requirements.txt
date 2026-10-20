@@ -1,0 +1,26 @@
+# CPU reference environment. FaceNet is installed separately without legacy dependency pins.
+fastapi==0.115.12
+uvicorn[standard]==0.34.2
+pydantic==2.11.4
+pydantic-settings==2.9.1
+python-multipart==0.0.20
+numpy==1.26.4
+Pillow==11.2.1
+opencv-python-headless==4.11.0.86
+opencv-contrib-python==4.11.0.86
+mediapipe==0.10.21
+easyocr==1.7.2
+pytesseract==0.3.13
+python-crfsuite==0.9.11
+scikit-learn==1.6.1
+matplotlib==3.10.1
+requests==2.32.3
+transformers==4.51.3
+sentencepiece==0.2.0
+safetensors==0.5.3
+pytest==8.3.5
+httpx==0.28.1
+
+nepali-datetime==1.0.8.4
+python-dotenv==1.1.0
+tqdm==4.67.1

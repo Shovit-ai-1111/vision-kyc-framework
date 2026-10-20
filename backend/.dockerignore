@@ -1,0 +1,16 @@
+__pycache__
+*.pyc
+.pytest_cache
+.env
+var
+.venv
+weights/*
+!weights/ner-crf/
+!weights/ner-crf/**
+
+.env.*
+!.env.example
+venv
+.venv
+__pycache__
+.ruff_cache

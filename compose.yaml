@@ -1,0 +1,61 @@
+name: visionkyc
+x-backend: &backend
+  image: visionkyc-backend:3.0
+  build: ./backend
+  environment: &environment
+    KYC_WEIGHTS_DIR: /models
+    KYC_DATA_DIR: /data
+    KYC_EVALUATIONS_DIR: /evaluations
+    GEMINI_API_KEY: ${GEMINI_API_KEY:-}
+    KYC_GEMINI_MODEL: ${KYC_GEMINI_MODEL:-gemini-3.5-flash-lite}
+    KYC_GEMINI_ENABLED: ${KYC_GEMINI_ENABLED:-true}
+    KYC_GEMINI_ATTEMPTS: ${KYC_GEMINI_ATTEMPTS:-3}
+    KYC_GEMINI_TIMEOUT_SECONDS: ${KYC_GEMINI_TIMEOUT_SECONDS:-20}
+    KYC_OCR_VARIANTS: ${KYC_OCR_VARIANTS:-5}
+    KYC_OCR_SECONDARY: ${KYC_OCR_SECONDARY:-false}
+    KYC_OCR_ENGINE: ${KYC_OCR_ENGINE:-tesseract}
+    KYC_NER_ENGINE: ${KYC_NER_ENGINE:-crf}
+    KYC_DETECTOR: ${KYC_DETECTOR:-mtcnn}
+    KYC_FACE_WEIGHTS: ${KYC_FACE_WEIGHTS:-vggface2}
+    KYC_REVIEWER_KEY: ${KYC_REVIEWER_KEY:-}
+    KYC_RETENTION_HOURS: ${KYC_RETENTION_HOURS:-24}
+  volumes:
+    - models:/models
+    - cases:/data
+    - ./datasets:/datasets
+    - ./evaluations:/evaluations
+services:
+  model-setup:
+    <<: *backend
+    command: ["python", "scripts/setup_models.py"]
+    restart: "no"
+  backend:
+    <<: *backend
+    depends_on:
+      model-setup:
+        condition: service_completed_successfully
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD", "python", "-c", "import urllib.request; urllib.request.urlopen('http://127.0.0.1:8000/health/live')"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 120s
+    # One process owns each live challenge. Do not scale without a shared state service.
+  frontend:
+    build: ./frontend
+    ports:
+      - "127.0.0.1:${PORT:-8080}:8080"
+    depends_on:
+      backend:
+        condition: service_healthy
+    restart: unless-stopped
+  tools:
+    <<: *backend
+    profiles: ["tools"]
+    # CLI outputs on bind mounts should be writable on Linux and Docker Desktop.
+    user: "0:0"
+    command: ["python", "-m", "app.evaluation.run", "--help"]
+volumes:
+  models:
+  cases:

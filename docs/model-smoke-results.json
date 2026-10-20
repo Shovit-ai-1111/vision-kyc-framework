@@ -1,0 +1,52 @@
+{
+  "scope": "Public test image inference smoke check; not KYC accuracy or attack evaluation",
+  "models": {
+    "mtcnn/vggface2": {
+      "faces": 1,
+      "embedding_dimensions": 512,
+      "norm": 1.0,
+      "self_similarity": 1.0,
+      "brightness_variant_similarity": 0.9955449104309082,
+      "seconds": 0.14629749799996716
+    },
+    "mtcnn/casia-webface": {
+      "faces": 1,
+      "embedding_dimensions": 512,
+      "norm": 1.0,
+      "self_similarity": 1.0,
+      "brightness_variant_similarity": 0.9920417070388794,
+      "seconds": 0.161813637999785
+    },
+    "yunet/vggface2": {
+      "faces": 1,
+      "embedding_dimensions": 512,
+      "norm": 1.0,
+      "self_similarity": 1.0,
+      "brightness_variant_similarity": 0.9936713576316833,
+      "seconds": 0.09659470099995815
+    },
+    "yunet/casia-webface": {
+      "faces": 1,
+      "embedding_dimensions": 512,
+      "norm": 1.0,
+      "self_similarity": 1.0,
+      "brightness_variant_similarity": 0.994542121887207,
+      "seconds": 0.10013669599993591
+    }
+  },
+  "landmarks": {
+    "count": 478,
+    "ear": 0.312427136491766,
+    "nose_offset": -0.029460715276078003
+  },
+  "tesseract": {
+    "tokens": 14,
+    "text": "SAMPLE NOT VALID\nPermanent Account\nFull Name : Test Person\nPAN Number : 123456789",
+    "confidence": 0.9450000000000001
+  },
+  "easyocr": {
+    "tokens": 12,
+    "text": "SAMPLE NOT VALID\nPermanent Account\nFull Name Test Person\nPAN Number 123456789",
+    "confidence": 0.6546308845041046
+  }
+}

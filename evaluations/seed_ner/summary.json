@@ -1,0 +1,180 @@
+{
+  "kind": "fields",
+  "data_kind": "synthetic_seed",
+  "counts": {
+    "records": 240,
+    "subjects": 240,
+    "splits": {
+      "test": 40,
+      "train": 160,
+      "validation": 40
+    }
+  },
+  "metrics": {
+    "label_regex_baseline": {
+      "name": {
+        "precision": 1.0,
+        "recall": 0.55,
+        "f1": 0.7096774193548387,
+        "tp": 22,
+        "fp": 0,
+        "fn": 18
+      },
+      "father_name": {
+        "precision": 1.0,
+        "recall": 0.6153846153846154,
+        "f1": 0.761904761904762,
+        "tp": 8,
+        "fp": 0,
+        "fn": 5
+      },
+      "dob": {
+        "precision": 1.0,
+        "recall": 0.8518518518518519,
+        "f1": 0.92,
+        "tp": 23,
+        "fp": 0,
+        "fn": 4
+      },
+      "document_number": {
+        "precision": 1.0,
+        "recall": 0.575,
+        "f1": 0.7301587301587301,
+        "tp": 23,
+        "fp": 0,
+        "fn": 17
+      },
+      "district": {
+        "precision": 1.0,
+        "recall": 0.38461538461538464,
+        "f1": 0.5555555555555556,
+        "tp": 5,
+        "fp": 0,
+        "fn": 8
+      },
+      "issue_date": {
+        "precision": 1.0,
+        "recall": 0.5555555555555556,
+        "f1": 0.7142857142857143,
+        "tp": 15,
+        "fp": 0,
+        "fn": 12
+      }
+    },
+    "crf": {
+      "name": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "tp": 40,
+        "fp": 0,
+        "fn": 0
+      },
+      "father_name": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "tp": 13,
+        "fp": 0,
+        "fn": 0
+      },
+      "dob": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "tp": 27,
+        "fp": 0,
+        "fn": 0
+      },
+      "document_number": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "tp": 40,
+        "fp": 0,
+        "fn": 0
+      },
+      "district": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "tp": 13,
+        "fp": 0,
+        "fn": 0
+      },
+      "issue_date": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "tp": 27,
+        "fp": 0,
+        "fn": 0
+      }
+    }
+  },
+  "charts": [
+    {
+      "type": "bar",
+      "title": "label_regex_baseline: exact field F1 (test)",
+      "data": [
+        {
+          "label": "name",
+          "value": 0.7096774193548387
+        },
+        {
+          "label": "father name",
+          "value": 0.761904761904762
+        },
+        {
+          "label": "dob",
+          "value": 0.92
+        },
+        {
+          "label": "document number",
+          "value": 0.7301587301587301
+        },
+        {
+          "label": "district",
+          "value": 0.5555555555555556
+        },
+        {
+          "label": "issue date",
+          "value": 0.7142857142857143
+        }
+      ]
+    },
+    {
+      "type": "bar",
+      "title": "crf: exact field F1 (test)",
+      "data": [
+        {
+          "label": "name",
+          "value": 1.0
+        },
+        {
+          "label": "father name",
+          "value": 1.0
+        },
+        {
+          "label": "dob",
+          "value": 1.0
+        },
+        {
+          "label": "document number",
+          "value": 1.0
+        },
+        {
+          "label": "district",
+          "value": 1.0
+        },
+        {
+          "label": "issue date",
+          "value": 1.0
+        }
+      ]
+    }
+  ],
+  "notes": "Exact field match after NFC, digit and whitespace normalization. OCR-token annotations supplied; this measures NER, not end-to-end OCR. Synthetic seed metrics do not represent real IDs.",
+  "manifest_sha256": "8dcc6cd7217d8b5e28bf0f8cc77b187f6b1c9cfed77e461e0ddf0b45c7247914",
+  "generated_at": 1791390031.693149
+}

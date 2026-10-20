@@ -1,0 +1,54 @@
+[
+  {
+    "kind": "pan",
+    "faces": 1,
+    "portrait_extracted": true,
+    "classification": "pan",
+    "issues": [
+      "sample_document"
+    ],
+    "fields": {
+      "name": "Test Person",
+      "father_name": "Test Father",
+      "dob": "2058-02-11 BS",
+      "document_number": "123456789",
+      "district": "Kathmandu",
+      "issue_date": "2078-03-15 BS"
+    }
+  },
+  {
+    "kind": "citizenship",
+    "faces": 1,
+    "portrait_extracted": true,
+    "classification": "citizenship",
+    "issues": [
+      "sample_document"
+    ],
+    "fields": {
+      "name": "Test Person",
+      "father_name": "Test Father",
+      "dob": "2058-02-11 BS",
+      "document_number": "12-34-56789",
+      "district": "Kathmandu",
+      "issue_date": "2078-03-15 BS"
+    }
+  },
+  {
+    "kind": "passport",
+    "faces": 1,
+    "portrait_extracted": true,
+    "classification": "passport",
+    "issues": [
+      "sample_document",
+      "missing_mrz"
+    ],
+    "fields": {
+      "name": "Test Person",
+      "father_name": "Test Father",
+      "dob": "2058-02-11 BS",
+      "document_number": "PA123456",
+      "district": "Kathmandu",
+      "issue_date": "2078-03-15 BS"
+    }
+  }
+]

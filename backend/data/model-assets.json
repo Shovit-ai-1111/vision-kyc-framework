@@ -1,0 +1,32 @@
+{
+  "facenet-vggface2.pt": {
+    "url": "https://github.com/timesler/facenet-pytorch/releases/download/v2.2.9/20180402-114759-vggface2.pt",
+    "sha256": "281cebca8662831adb987a874bdcb36e73f5b1c6dc5ee5878f305e985625d99b",
+    "bytes": 111898327
+  },
+  "facenet-casia-webface.pt": {
+    "url": "https://github.com/timesler/facenet-pytorch/releases/download/v2.2.9/20180408-102900-casia-webface.pt",
+    "sha256": "7a67afdbbc995fce5e10128675e318799a70698c2f433ba75dd7eb9a2f096e7d",
+    "bytes": 115887415
+  },
+  "face_landmarker.task": {
+    "url": "https://storage.googleapis.com/mediapipe-models/face_landmarker/face_landmarker/float16/1/face_landmarker.task",
+    "sha256": "64184e229b263107bc2b804c6625db1341ff2bb731874b0bcc2fe6544e0bc9ff",
+    "bytes": 3758596
+  },
+  "yunet.onnx": {
+    "url": "https://github.com/opencv/opencv_zoo/raw/refs/heads/main/models/face_detection_yunet/face_detection_yunet_2023mar.onnx",
+    "sha256": "8f2383e4dd3cfbb4553ea8718107fc0423210dc964f9f4280604804ed2552fa4",
+    "bytes": 232589
+  },
+  "easyocr/devanagari.pth": {
+    "sha256": "1a8d0abb2032c0ec9d06639bc078b7686c10cf3b8193fe42a6382bc6846ae4a3",
+    "bytes": 215406870,
+    "source": "EasyOCR 1.7.2 model registry (upstream MD5 checked by EasyOCR)"
+  },
+  "easyocr/craft_mlt_25k.pth": {
+    "sha256": "4a5efbfb48b4081100544e75e1e2b57f8de3d84f213004b14b85fd4b3748db17",
+    "bytes": 83152330,
+    "source": "EasyOCR 1.7.2 model registry (upstream MD5 checked by EasyOCR)"
+  }
+}

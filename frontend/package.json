@@ -1,0 +1,31 @@
+{
+  "name": "vision-kyc-client",
+  "private": true,
+  "version": "3.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite --host 127.0.0.1",
+    "build": "vite build",
+    "preview": "vite preview --host 127.0.0.1",
+    "test": "vitest run"
+  },
+  "dependencies": {
+    "axios": "^1.12.2",
+    "react": "^19.1.1",
+    "react-dom": "^19.1.1"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-react": "^5.0.4",
+    "autoprefixer": "^10.4.21",
+    "postcss": "^8.5.6",
+    "tailwindcss": "^3.4.17",
+    "vite": "^7.1.7",
+    "vitest": "^3.2.4",
+    "jsdom": "^26.1.0",
+    "@testing-library/react": "^16.3.0",
+    "@testing-library/jest-dom": "^6.8.0"
+  },
+  "engines": {
+    "node": ">=22.12.0"
+  }
+}

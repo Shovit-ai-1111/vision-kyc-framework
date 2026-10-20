@@ -1,0 +1,13 @@
+{
+  "scope": "Real model API smoke check using deliberately invalid synthetic document + public-domain test portrait; not live-user accuracy",
+  "readiness": 200,
+  "document_analysis": 200,
+  "document_type": "pan",
+  "sample_rejection_issue": true,
+  "frame_landmarks": 478,
+  "replay_http": 409,
+  "replay_error": "replayed_frame",
+  "finish_after_failed_liveness": 409,
+  "reviewer_state": "FAILED",
+  "embedding_exposed": false
+}

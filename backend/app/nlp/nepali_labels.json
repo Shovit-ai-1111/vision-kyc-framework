@@ -1,0 +1,36 @@
+{
+  "headers": {
+    "citizenship": ["नागरिकता", "नागरीकता", "नागरिकता प्रमाणपत्र", "नेपाली नागरिकता प्रमाण-पत्र", "citizenship"],
+    "national_id": ["राष्ट्रिय परिचयपत्र", "राष्ट्रिय परिचय पत्र", "राष्टिय परिचयपत्र", "national identity", "national id"],
+    "driving_license": ["सवारी चालक अनुमतिपत्र", "सवारी चालक अनुमति पत्र", "चालक अनुमतिपत्र", "driving licence", "driving license"],
+    "passport": ["राहदानी", "passport", "P<NPL"],
+    "pan": ["स्थायी लेखा", "स्थाई लेखा", "आन्तरिक राजस्व", "permanent account", "inland revenue", "pan card"]
+  },
+  "labels": {
+    "name": ["नाम थर", "नामथर", "पूरा नाम", "नाम", "full name", "name"],
+    "father_name": ["बाबुको नाम थर", "बुबाको नाम थर", "पिताको नाम", "बाबुको नाम", "बुबाको नाम", "वावुको नाम", "father's name", "father name", "father"],
+    "mother_name": ["आमाको नाम थर", "आमाको नाम", "माताको नाम", "mother's name", "mother name"],
+    "dob": ["जन्म मिति", "जन्ममिति", "जन्म मीति", "date of birth", "birth date", "dob"],
+    "document_number": ["नागरिकता प्रमाणपत्र नं.", "नागरिकता प्रमाण पत्र नं.", "नागरिकता प्रमाण-पत्र नं.", "नागरिकता प्रमाणपत्र नम्बर", "नागरिकता नं.", "प्रमाणपत्र नं.", "राष्ट्रिय परिचयपत्र नम्बर", "परिचयपत्र नं.", "स्थायी लेखा नम्बर", "स्थायी लेखा नं.", "राहदानी नं.", "सवारी चालक अनुमतिपत्र नं.", "नागरीकता नं.", "document number", "citizenship number", "citizenship no.", "license number", "licence no.", "passport no.", "passport number", "pan number", "id number", "document no.", "number"],
+    "district": ["जारी गर्ने जिल्ला", "जारी जिल्ला", "जिल्ला", "issuing district", "district"],
+    "issue_date": ["जारी मिति", "जारी गरेको मिति", "जारी मीति", "जारी गर्ने मिति", "issue date", "date of issue", "issued date"],
+    "gender": ["लिङ्ग", "लिंग", "gender", "sex"],
+    "address": ["स्थायी ठेगाना", "हालको ठेगाना", "ठेगाना", "permanent address", "address"],
+    "birth_place": ["जन्म स्थान", "जन्मस्थान", "place of birth", "birth place"],
+    "surname": ["थर", "surname"],
+    "given_names": ["given names", "given name"]
+  },
+  "translations": {
+    "नेपाल सरकार": "Government of Nepal", "नेपाली नागरिकता प्रमाणपत्र": "Nepali Citizenship Certificate", "नागरिकता प्रमाणपत्र": "Citizenship Certificate", "राष्ट्रिय परिचयपत्र": "National Identity Card", "सवारी चालक अनुमतिपत्र": "Driving License", "राहदानी": "Passport", "स्थायी लेखा नम्बर": "Permanent Account Number",
+    "नेपाल": "Nepal", "काठमाडौँ": "Kathmandu", "काठमाडौं": "Kathmandu", "काठमाण्डौ": "Kathmandu", "काठमाण्डौं": "Kathmandu", "ललितपुर": "Lalitpur", "भक्तपुर": "Bhaktapur", "कास्की": "Kaski", "पोखरा": "Pokhara", "रुपन्देही": "Rupandehi", "चितवन": "Chitwan", "मोरङ": "Morang", "सुनसरी": "Sunsari", "झापा": "Jhapa", "धनुषा": "Dhanusha", "कैलाली": "Kailali", "कञ्चनपुर": "Kanchanpur", "बाँके": "Banke", "दाङ": "Dang", "गोरखा": "Gorkha", "काभ्रेपलाञ्चोक": "Kavrepalanchok", "सिन्धुपाल्चोक": "Sindhupalchok", "धादिङ": "Dhading", "नुवाकोट": "Nuwakot", "बागमती": "Bagmati", "गण्डकी": "Gandaki", "लुम्बिनी": "Lumbini", "कर्णाली": "Karnali", "सुदूरपश्चिम": "Sudurpashchim", "मधेश": "Madhesh", "कोशी": "Koshi",
+    "राम": "Ram", "हरि": "Hari", "सीता": "Sita", "गीता": "Gita", "थापा": "Thapa", "शर्मा": "Sharma", "पौडेल": "Paudel", "अधिकारी": "Adhikari", "श्रेष्ठ": "Shrestha", "काफ्ले": "Kafle", "राजभण्डारी": "Rajbhandari", "ठकुरी": "Thakuri", "मनोज": "Manoj", "प्रसन्न": "Prasanna", "शोभित": "Shovit", "संयोग": "Samyog",
+    "पुरुष": "Male", "महिला": "Female", "अन्य": "Other"
+  },
+  "number_patterns": {
+    "citizenship": ["[0-9]{1,4}(?:[-/][0-9]{1,8}){1,5}", "[0-9]{4,18}"],
+    "national_id": ["[0-9]{10}"],
+    "driving_license": ["[0-9]{1,3}[-/][0-9]{1,3}[-/][0-9]{5,10}", "[0-9]{8,16}"],
+    "passport": ["[A-Z]{0,2}[0-9]{6,9}"],
+    "pan": ["[0-9]{9}"]
+  }
+}

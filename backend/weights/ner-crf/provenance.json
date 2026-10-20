@@ -1,0 +1,37 @@
+{
+  "trained": true,
+  "engine": "crf",
+  "base_model": "CRFsuite linear-chain CRF",
+  "data_kind": "synthetic_seed",
+  "labels": [
+    "O",
+    "B-NAME",
+    "I-NAME",
+    "B-FATHER_NAME",
+    "I-FATHER_NAME",
+    "B-DOB",
+    "I-DOB",
+    "B-DOCUMENT_NUMBER",
+    "I-DOCUMENT_NUMBER",
+    "B-DISTRICT",
+    "I-DISTRICT",
+    "B-ISSUE_DATE",
+    "I-ISSUE_DATE",
+    "B-SURNAME",
+    "I-SURNAME",
+    "B-GIVEN_NAMES",
+    "I-GIVEN_NAMES"
+  ],
+  "manifest_sha256": "8dcc6cd7217d8b5e28bf0f8cc77b187f6b1c9cfed77e461e0ddf0b45c7247914",
+  "counts": {
+    "records": 240,
+    "subjects": 240,
+    "splits": {
+      "train": 160,
+      "validation": 40,
+      "test": 40
+    }
+  },
+  "seed": 42,
+  "selection": "fixed hyperparameters; report held-out metrics separately"
+}

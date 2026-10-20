@@ -1,0 +1,1 @@
+"""Vision KYC application."""
